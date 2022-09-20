@@ -5,11 +5,14 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "data:import": "node seeder",
+    "data:destroy": "node seeder -d"
   },
   "author": "Daniel Jimenez",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "mongoose": "^6.6.1",
